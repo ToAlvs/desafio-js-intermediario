@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    background-image: url(../images/bg-repeat.jpg);
+    background-size: contain;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+}
+
+main{
+    display: flex;
+    width: 800px;
+    height: 402px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 50px;
+}
+
+.duvida{
+    color: #fff;
+}
+
+.duvida h2{
+    margin-bottom: 11px;
+    width: 287px;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.duvida p{
+    width: 300px;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    height: 378px;
+    padding: 22px;
+    background-color: #ffff;
+    justify-content: space-between;
+    position: relative;
+}
+
+.lista-de-campos{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.lista-de-campos li {
+    display: flex;
+    flex-direction: column;
+    min-height: 50px;
+}
+
+
+.formulario .campo-de-texto{
+    width: 298px;
+    height: 35px;
+    padding: 8px 9px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+.formulario .lista-de-campos li input[type="number"]::-webkit-outer-spin-button,
+.formulario .lista-de-campos li input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.formulario li .campo-de-texto.mensagem{
+    min-height: 100px;
+    resize: none;
+    /* margin-bottom: 25px; */
+}
+
+.campo-de-texto::placeholder, .campo-de-texto.mensagem::placeholder{
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.formulario .legenda-campos-obrigatorios{
+    position: absolute;
+    left: 15px;
+    top: 277px;
+}
+
+.formulario .botao{
+    width: 298px;
+    min-height: 41px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #3CCC87;
+    border: none;
+    font-weight: 700;
+    font-size: 15px;
+    /* margin-top: 58px; */
+}
+
+.formulario .campo-de-texto.borda-erro{
+    border: 1px solid #F52E2E;
+}
+
+.formulario .campo-de-texto.borda-acerto{
+    border: 1px solid #3CCC87;
+}
+
+.aviso-campo-obrigatorio{
+    color: #F52E2E;
+    font-weight: 400;
+    font-size: 8px;
+    display: none;
+}

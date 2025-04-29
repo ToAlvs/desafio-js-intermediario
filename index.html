@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <title>Desafio 3</title>
+</head>
+
+<body>
+    <main>
+        <section class="duvida">
+            <h2>FICOU COM DÚVIDA?<br> NOS MANDE UMA MENSAGEM!</h2>
+            <p>caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de
+                24h.</p>
+        </section>
+
+        <section class="formulario">
+            <ul class="lista-de-campos">
+                <form action="/enviar" method="POST">
+                    <li>
+                        <input type="text" class="campo-de-texto" placeholder="Nome completo *">
+                        <span class="aviso-campo-obrigatorio">campo obrigatório</span>
+                    </li>
+                    <li>
+                        <input type="email" class="campo-de-texto" placeholder="Email *">
+                        <span class="aviso-campo-obrigatorio">campo obrigatório</span>
+                    </li>
+                    <li>
+                        <input type="tel" class="campo-de-texto" placeholder="Telefone *">
+                        <span class="aviso-campo-obrigatorio">campo obrigatório</span>
+                    </li>
+                    <li>
+                        <textarea class="campo-de-texto mensagem" placeholder="Mensagem *"></textarea>
+                        <span class="aviso-campo-obrigatorio">campo obrigatório</span>
+                    </li>
+                </form>
+            </ul>
+
+            <p class="legenda-campos-obrigatorios" id="legenda">*campos obrigatórios</p>
+            <button type="submit" class="botao" id="botao">Enviar</button>
+        </section>
+    </main>
+
+    <script src="./src/js/index.js"></script>
+</body>
+
+</html>
